@@ -1,0 +1,21 @@
+{% extends 'listings/base.html' %}
+
+{% block content %}
+
+<h2>{{ listing.name }}</h2>
+
+<ul>
+    <!-- Django a ajouté la méthode get_genre_display pour convertir les valeurs de la base de données genre (par exemple HH ) dans leur format d'affichage (par exemple Hip Hop ). -->
+    <li>Type : {{ listing.get_type_display }}</li>
+    <li>Année de sortie : {{ listing.year }}</li>
+    <li>Description : <p>{{ listing.description }}</p></li>
+    <li>Vendu : {{ listing.sold|yesno }}</li>
+    <li>Groupe : {{ listing.band }}</li>
+
+</ul>
+
+<a href="{% url 'listing-update' listing.id %}">Modifier ce produit</a>
+<a href="{% url 'listing-delete' listing.id %}">Supprimer ce produit</a>
+<a href="{% url 'listing-list' %}">Retour à tous les produits</a>
+
+{% endblock %}

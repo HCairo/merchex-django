@@ -1,0 +1,15 @@
+<!-- Nous pouvons voir que pendant une requête GET, request.POST est un QueryDict vide (qui est un type spécial de dict Python). -->
+{% extends 'listings/base.html' %}
+
+{% block content %}
+<h1>Contact Us</h1>
+
+<p>We're here to help you.</p>
+
+<form action="" method="post">
+{% csrf_token %}
+{{ form }}
+<input type="submit" value="Send">
+</form>
+
+{% endblock %}

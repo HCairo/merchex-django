@@ -1,0 +1,13 @@
+{% extends 'listings/base.html' %}
+
+{% block content %}
+
+<div class="main-content">
+    <h1>Welcome to Merchex</h1>
+    <p>Explore the best of music merchandise from legendary bands to emerging artists.</p>
+
+    <button onclick="window.location.href='{% url 'listing-list' %}'">Shop Products</button>
+    <button onclick="window.location.href='{% url 'band-list' %}'">View Bands</button>
+</div>
+
+{% endblock %}

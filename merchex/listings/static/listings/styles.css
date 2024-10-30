@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Bebas+Neue&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +7,166 @@
 }
 
 body {
-    background-color: #12100E;
-    color: #DCE0D9;
+    background-color: #1E1E1E;
+    color: #F0F0F0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+h2, h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+    color: #FF385C;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+nav {
+    background-color: #121212;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 2px solid #FF385C;
+}
+
+nav a {
+    color: #F0F0F0;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FF385C;
+}
+
+.main-content {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+button, input[type="submit"] {
+    background-color: #FF385C;
+    color: #F0F0F0;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #F8E71C;
+}
+
+a {
+    color: #FF385C;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #F8E71C;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+li {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button, input[type="submit"] {
+    background-color: #FF385C;
+    color: #F0F0F0;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #F8E71C;
+}
+
+form {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #2A2A2A;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #FF385C;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    border: 1px solid #F0F0F0;
+    background-color: #3C3C3C;
+    color: #F0F0F0;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="number"]:focus,
+form textarea:focus,
+form select:focus {
+    border-color: #FF385C;
+    outline: none;
+}
+
+form button,
+form input[type="submit"] {
+    width: 100%;
+    background-color: #FF385C;
+    color: #F0F0F0;
+    padding: 12px;
+    border: none;
+    font-size: 1.3rem;
+    font-family: 'Bebas Neue', cursive;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover,
+form input[type="submit"]:hover {
+    background-color: #F8E71C;
+}
+
+.errorlist {
+    margin-bottom: -10px;
+    color: #FF385C;
+    font-size: 0.9rem;
 }
